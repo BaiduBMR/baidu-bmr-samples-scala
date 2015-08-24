@@ -95,4 +95,4 @@
 正常情况下，程序会顺利结束，您可以通过yarn logs -applicationId xxxx  来查看程序的日志信息。
 
 ### <a name="feedback">意见和建议</a>
-以上就是完整的操作流程，如果您在执行的过程中遇到任何的问题，或者有任何的建议，欢迎<a name="http://ticket.bce.baidu.com/#/ticket/create">联系我们</a>。
+以上就是完整的操作流程，如果您在执行的过程中遇到任何的问题，或者有任何的建议，欢迎<a href="http://ticket.bce.baidu.com/#/ticket/create">联系我们</a>。
