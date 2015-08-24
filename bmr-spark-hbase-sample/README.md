@@ -39,6 +39,7 @@
 #### 2. 编译打包样例代码并上传至BOS上
 
 * Fork或Clone baidu-bmr-samples-scala项目
+
 > git clone https://github.com/BaiduBMR/baidu-bmr-samples-scala.git
 	
 * cd至baidu-bmr-samples-scala/bmr-spark-hbase-sample目录下，运行"sbt eclipse"生成Eclipse项目文件，然后将项目导入至scala ide内；
@@ -50,7 +51,9 @@
 ### 三、准备测试表格和测试数据
 
 本样例程序需要访问HBase中一张名为“spark_test_table”并且包含column family “t”的的表.所以在跑示例程序之前，我们需要人工创建这样表,并添加一些简单的数据：
+
 > create ‘spark_test_table','t'
+
 > put 'spark_test_table', "test\xef\xff", 't', "\x01\x33\x40"
 
 测试表和数据准备完毕后，接下来就可以运行样例程序了。
