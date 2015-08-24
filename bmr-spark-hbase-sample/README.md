@@ -4,7 +4,7 @@
 
 运行样例程序前，请仔细阅读以下说明：
 
-## <a name='TOC'>样例程序说明</a>
+## <a name='TOC'>样例程序运行说明</a>
 
   * [一、准备BMR集群](#prepare_cluster)
     - [1. 创建HBase集群](#prepare_cluster_hbase)
@@ -17,7 +17,7 @@
   * [四、执行样例程序](#exec_prog)
     - [1. 通过web页面提交并执行样例程序](#exec_prog_web)
     - [2. 通过命令行提交并执行样例程序](#exec_prog_cmd)
-  * [意见和反馈](#feedback)
+  * [意见和建议](#feedback)
 
 
 ### <a name="prepare_cluster">一、准备BMR集群</a>
@@ -94,5 +94,5 @@
 
 正常情况下，程序会顺利结束，您可以通过yarn logs -applicationId xxxx  来查看程序的日志信息。
 
-
-以上就是完整的操作流程，如果您在执行的过程中遇到任何的问题，或者有任何的建议，欢迎<a name="feedback">联系我们：</a>。
+### <a name="feedback">意见和建议</a>
+以上就是完整的操作流程，如果您在执行的过程中遇到任何的问题，或者有任何的建议，欢迎<a name="http://ticket.bce.baidu.com/#/ticket/create">联系我们</a>。
