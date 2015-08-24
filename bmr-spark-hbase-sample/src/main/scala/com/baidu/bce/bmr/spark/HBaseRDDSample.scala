@@ -45,7 +45,7 @@ object HBaseRDDSample {
   }
 
   def main(args: Array[String]) {
-    // scan by Family 't'
+
     logger.info("scan table:$TableName by Family 't'")
     val start = System.currentTimeMillis()
 
@@ -64,8 +64,7 @@ object HBaseRDDSample {
       classOf[org.apache.hadoop.hbase.client.Result]).count
 
     val end = System.currentTimeMillis()
-    logger.info(s"Total count: $count, end scan table:$HBASE_SAMPLETABLE_NAME, " +
-      s"time diff ${(end - start) / 1000} seconds")
+    logger.info(s"Total count: $count, total time: ${(end - start) / 1000} seconds")
 
     sc.stop()
   }
