@@ -39,13 +39,13 @@
 #### 2. 编译打包样例代码并上传至BOS上
 
 * Fork或Clone baidu-bmr-samples-scala项目
-    git clone https://github.com/BaiduBMR/baidu-bmr-samples-scala.git
+> git clone https://github.com/BaiduBMR/baidu-bmr-samples-scala.git
 	
-* cd至baidu-bmr-samples-scala/bmr-spark-hbase-sample目录下，运行sbt eclipse生成项目文件，并导入scala ide内；
+* cd至baidu-bmr-samples-scala/bmr-spark-hbase-sample目录下，运行"sbt eclipse"生成Eclipse项目文件，然后将项目导入至scala ide内；
 
 * 修改src/main/resources/common.properties文件里面的HBase相关的配置，并运行“sbt assembly"打包生成jar文件：bmr-spark-hbase-sample.jar. 这个jar文件就是样例程序的可执行文件。
 
-* 打开开放云BOS对象存储的管理页面（http://console.bce.baidu.com/bos/#/bos/list），我们把bmr-spark-hbase-sample.jar上传至某个目录下。
+* 打开开放云BOS对象存储的管理页面（http://console.bce.baidu.com/bos/#/bos/list ），我们把bmr-spark-hbase-sample.jar上传至某个目录下。
 
 ### 三、准备测试表格和测试数据
 
@@ -61,7 +61,7 @@
 
 #### 1. 通过web页面提交并执行样例程序
 
-进入百度开放云BMR管理控制台（http://console.bce.baidu.com/bmr/#/bmr/list）， 找到上述步骤中创建的Spark集群，进入集群实例详情页面，并选择“作业”一栏。
+进入百度开放云BMR管理控制台（http://console.bce.baidu.com/bmr/#/bmr/list ）， 找到上述步骤中创建的Spark集群，进入集群实例详情页面，并选择“作业”一栏。
 点击页面中的“添加作业”按钮，在“名称”一栏内填写任意名称，在“bos输入地址”一栏选择上面步骤中我们上传的bmr-spark-hbase-sample.jar在bos上的完整路径（在上面的步骤中，我们已经把bmr-spark-hbase-sample.jar文件上传到BOS上了）。
 然后在"参数"一栏填写“ --class com.baidu.bce.bmr.spark.HBaseRDDSample ”（其他未提及的项保持默认即可），然后点击“确定”按钮。这时候，作业将开始调度并执行，我们可以通过作业管理页面来观察作业的执行结果。
 
