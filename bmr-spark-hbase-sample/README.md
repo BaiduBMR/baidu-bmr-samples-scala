@@ -6,12 +6,12 @@
 
 ### 一、准备BMR集群
 #### 1. 创建HBase集群
-进入百度开放云BMR管理控制台（http://console.bce.baidu.com/bmr/#/bmr/list），点击“创建集群”按钮，进入集群创建页面，填写好集群的基本配置信息并完成所有创建步骤。
+进入百度开放云BMR管理控制台（http://console.bce.baidu.com/bmr/#/bmr/list ），点击“创建集群”按钮，进入集群创建页面，填写好集群的基本配置信息并完成所有创建步骤。
 
 **注意:在软件配置设置一栏内，镜像类型需要选为hadoop,并且添加HBase应用**
 
 #### 2. 创建Spark集群
-进入百度开放云BMR管理控制台（http://console.bce.baidu.com/bmr/#/bmr/list），点击“创建集群”按钮，进入集群创建页面，填写好集群的基本配置信息并完成所有创建步骤。
+进入百度开放云BMR管理控制台（http://console.bce.baidu.com/bmr/#/bmr/list ），点击“创建集群”按钮，进入集群创建页面，填写好集群的基本配置信息并完成所有创建步骤。
 
 **注意:在软件配置设置一栏内，镜像类型需要选为Spark**
 
