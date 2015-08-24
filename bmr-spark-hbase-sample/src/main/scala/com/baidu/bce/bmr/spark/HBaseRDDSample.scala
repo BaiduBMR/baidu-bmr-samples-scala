@@ -28,7 +28,7 @@ import com.baidu.bce.bmr.spark.config.ConfigProvider.HBASE_SAMPLETABLE_NAME
 
 /** load data from hbase table sample */
 object HBaseRDDSample {
-  private val LOG = LogFactory.getLog(this.getClass())
+  private val logger = LogFactory.getLog(this.getClass())
 
   private val config = ConfigProvider
   private val Batch = 20000
@@ -46,7 +46,7 @@ object HBaseRDDSample {
 
   def main(args: Array[String]) {
     // scan by Family 't'
-    LOG.info("scan table:$TableName by Family 't'")
+    logger.info("scan table:$TableName by Family 't'")
     val start = System.currentTimeMillis()
 
     val scan = new Scan()
@@ -64,7 +64,7 @@ object HBaseRDDSample {
       classOf[org.apache.hadoop.hbase.client.Result]).count
 
     val end = System.currentTimeMillis()
-    LOG.info(s"Total count: $count, end scan table:$HBASE_SAMPLETABLE_NAME, " +
+    logger.info(s"Total count: $count, end scan table:$HBASE_SAMPLETABLE_NAME, " +
       s"time diff ${(end - start) / 1000} seconds")
 
     sc.stop()

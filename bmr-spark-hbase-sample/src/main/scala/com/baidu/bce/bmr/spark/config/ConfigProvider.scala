@@ -18,14 +18,14 @@ import org.apache.commons.logging.LogFactory
 import org.apache.hadoop.conf.Configuration
 
 class ConfigProvider {
-  private val LOG = LogFactory.getLog(classOf[ConfigProvider])
+  private val logger = LogFactory.getLog(classOf[ConfigProvider])
   private val propLoader = PropertyLoader
 
   val HBASE_SAMPLETABLE_NAME = propLoader.loadProp(HBASE_SAMPLETABLE_NAME_KEY)
   val HBASE_SAMPLETABLE_CF_NAME = propLoader.loadProp(HBASE_SAMPLETABLE_CF_NAME_KEY)
 
   def getHBaseConfig(): Configuration = {
-    LOG.info("Load hadoop,hbase configuration.")
+    logger.info("Load hadoop,hbase configuration.")
     val conf = new Configuration()
     conf.set(HBASE_ZK_CLIENT_PORT_KEY, propLoader.loadProp(HBASE_ZK_CLIENT_PORT_KEY))
     conf.set(HBASE_ZK_QUORUM_KEY, propLoader.loadProp(HBASE_ZK_QUORUM_KEY))
